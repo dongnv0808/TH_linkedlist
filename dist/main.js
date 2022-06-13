@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const LinkedList_1 = require("./LinkedList");
+let linkList = new LinkedList_1.LinkedList();
+linkList.insertFirstNode(1);
+linkList.insertFirstNode(2);
+linkList.insertFirstNode(3);
+linkList.insertFirstNode(30);
+linkList.insertLastNode(40);
+console.log(linkList.getSize());
+console.log(linkList.readList());
