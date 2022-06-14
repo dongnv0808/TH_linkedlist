@@ -22,7 +22,7 @@ export class LinkedList<T>{
             this.insertFirstNode(data);
         }else {
             let node = new Node(data);
-            // @ts-ignore
+            if(this.tail)
             this.tail.next = node;
             this.tail = node;
             this.size++;
@@ -35,7 +35,6 @@ export class LinkedList<T>{
         let listData = [];
         let currentNode = this.head;
         while(currentNode !== null){
-            // @ts-ignore
             listData.push(currentNode.readData());
             currentNode = currentNode.next;
         }
